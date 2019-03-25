@@ -1,6 +1,6 @@
 {
     "aliosStudio.inner.yosBin": "aos",
-    "aliosStudio.hardware.board": "developerkit",
+    "aliosStudio.hardware.board": "stm32f103ze-alientek",
     "aliosStudio.name": "helloworld",
     "aliosStudio.aosVersion": "2.1.0",
 	"C_Cpp.default.browse.databaseFilename": "${workspaceRoot}/.vscode/.TAGS.AOS.DB",

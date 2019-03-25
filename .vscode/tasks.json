@@ -7,7 +7,7 @@
       "command": "aos",
       "args": [
         "make",
-        "helloworld@developerkit",
+        "helloworld@stm32f103ze-alientek",
         "-c",
         "config"
       ],
@@ -32,7 +32,7 @@
       "command": "aos",
       "args": [
         "upload",
-        "helloworld@developerkit"
+        "helloworld@stm32f103ze-alientek"
       ],
       "presentation": {
         "focus": true
@@ -44,7 +44,7 @@
       "command": "aos",
       "args": [
         "debug",
-        "helloworld@developerkit"
+        "helloworld@stm32f103ze-alientek"
       ],
       "presentation": {
         "focus": true
@@ -82,7 +82,7 @@
       "command": "aos",
       "args": [
         "ota",
-        "helloworld@developerkit",
+        "helloworld@stm32f103ze-alientek",
         "-d",
         "",
         "-p",
