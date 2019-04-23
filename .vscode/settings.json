@@ -1,7 +1,21 @@
 {
     "aliosStudio.inner.yosBin": "aos",
-    "aliosStudio.hardware.board": "stm32f103ze-alientek",
-    "aliosStudio.name": "helloworld",
+    "aliosStudio.hardware.board": "esp8266",
+    "aliosStudio.name": "linkkitapp",
     "aliosStudio.aosVersion": "2.1.0",
-	"C_Cpp.default.browse.databaseFilename": "${workspaceRoot}/.vscode/.TAGS.AOS.DB",
+    "C_Cpp.default.browse.databaseFilename": "${workspaceRoot}/.vscode/.TAGS.AOS.DB",
+    "files.associations": {
+        "network.h": "c",
+        "ets_sys.h": "c",
+        "kernel.h": "c",
+        "types.h": "c",
+        "osal.h": "c",
+        "uart.h": "c",
+        "app_entry.h": "c",
+        "yloop.h": "c",
+        "gpio.h": "c",
+        "upgrade.h": "c",
+        "rec_define.h": "c",
+        "ulog.h": "c"
+    },
 }

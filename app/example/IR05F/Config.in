@@ -1,0 +1,8 @@
+config AOS_APP_IR05F
+    bool "IR05F Sample"
+    help
+        this is a IR05F sample form hal uart.h
+
+if AOS_APP_IR05F
+# Configurations for app uart
+endif

@@ -140,6 +140,8 @@ deps_config := \
 	app/Config.in \
 	app/profile/gatewayapp/Config.in \
 	app/profile/Config.in \
+	app/example/IR05F/Config.in \
+	app/example/tem_hum_monitor/Config.in \
 	app/example/yts/Config.in \
 	app/example/ulocationapp/Config.in \
 	app/example/udevapp/Config.in \

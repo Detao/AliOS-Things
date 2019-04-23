@@ -1,0 +1,8 @@
+NAME := IR05F
+
+$(NAME)_MBINS_TYPE := app
+$(NAME)_VERSION := 1.0.0
+$(NAME)_SUMMARY := this is a IR05F sample 
+$(NAME)_SOURCES := uart.c
+
+GLOBAL_DEFINES += AOS_NO_WIFI

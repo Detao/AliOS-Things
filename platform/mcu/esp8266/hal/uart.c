@@ -9,7 +9,7 @@
 #include "driver/uart.h"
 
 int32_t uart_receive_buffer_queue(uint8_t *data);
-#define UART0_BUF_QUEUE_BYTES 128
+#define UART0_BUF_QUEUE_BYTES 512
 
 kbuf_queue_t g_buf_queue_uart;
 char g_buf_uart[UART0_BUF_QUEUE_BYTES];

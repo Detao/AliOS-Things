@@ -191,5 +191,17 @@ if AOS_APP_YTS
         default "yts"
 endif
 
+source "app/example/tem_hum_monitor/Config.in"
+if AOS_APP_TEM_HUM_MONITOR
+    config AOS_BUILD_APP
+        default "tem_hum_monitor"
+endif
+
+source "app/example/IR05F/Config.in"
+if AOS_APP_IR05F
+    config AOS_BUILD_APP
+        default "IR05F"
+endif
+
 endchoice
 endif

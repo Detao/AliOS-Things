@@ -11,10 +11,10 @@
 #include "iot_export.h"
 #include "app_entry.h"
 
-#define PRODUCT_KEY             "a1MZxOdcBnO"
-#define PRODUCT_SECRET          "h4I4dneEFp7EImTv"
-#define DEVICE_NAME             "test_01"
-#define DEVICE_SECRET           "t9GmMf2jb3LgWfXBaZD2r3aJrfVWBv56"
+#define PRODUCT_KEY             "a1dAtJv3r2X"
+#define PRODUCT_SECRET          "ZCYqDZNbbQzCizyD"
+#define DEVICE_NAME             "Device1"
+#define DEVICE_SECRET           "egswZ0okv65MZ04bGcqPiAgCtZ21odxD"
 
 /* These are pre-defined topics */
 #define TOPIC_UPDATE            "/"PRODUCT_KEY"/"DEVICE_NAME"/update"

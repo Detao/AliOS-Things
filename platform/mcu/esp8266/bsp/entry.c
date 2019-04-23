@@ -59,6 +59,7 @@ static void app_entry(void *arg)
 
 extern uart_dev_t uart_0;
 
+
 extern hal_wifi_module_t aos_wifi_esp8266;
 void user_init(void)
 {
@@ -66,7 +67,6 @@ void user_init(void)
 
     extern int32_t hal_uart_init(uart_dev_t *uart);
     extern void key_gpio_init(void);
-
 	if(recovery_check() != REC_NORMAL_START) {
         recovery_main();
     }
@@ -79,6 +79,7 @@ void user_init(void)
     if (ret){
         printf("waring: wifi init fail ret is %d \r\n", ret);
     }
+    printf("this is user_init \r\n");
 #if defined(SUPPORT_SINGAPORE_DOMAIN)
     aos_task_new("main", app_entry, 0, 7.5*1024);
 #elif defined(ESP8266_CHIPSET)

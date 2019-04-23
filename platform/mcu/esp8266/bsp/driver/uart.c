@@ -355,7 +355,8 @@ uart0_rx_intr_handler(void *para)
     uint8 uart_no = UART0;//UartDev.buff_uart_no;
     uint8 fifo_len = 0;
     uint8 buf_idx = 0;
-    uint8 fifo_tmp[128] = {0};
+    // by dt  128->1024
+    uint8 fifo_tmp[512] = {0};
 
     uint32 uart_intr_status = READ_PERI_REG(UART_INT_ST(uart_no)) ;
 
@@ -367,7 +368,6 @@ uart0_rx_intr_handler(void *para)
             //printf("full\r\n");
             fifo_len = (READ_PERI_REG(UART_STATUS(UART0)) >> UART_RXFIFO_CNT_S)&UART_RXFIFO_CNT;
             buf_idx = 0;
-
             while (buf_idx < fifo_len) {
                 //uart_tx_one_char(UART0, READ_PERI_REG(UART_FIFO(UART0)) & 0xFF);
                 RcvChar = READ_PERI_REG(UART_FIFO(UART0)) & 0xFF;

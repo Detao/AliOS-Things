@@ -298,7 +298,6 @@ kstat_t krhino_buf_queue_recv(kbuf_queue_t *queue, tick_t ticks, void *msg, size
     NULL_PARA_CHK(size);
 
     RHINO_CRITICAL_ENTER();
-
     cur_cpu_num = cpu_cur_get();
 
     if ((g_intrpt_nested_level[cur_cpu_num] > 0u) && (ticks != RHINO_NO_WAIT)) {

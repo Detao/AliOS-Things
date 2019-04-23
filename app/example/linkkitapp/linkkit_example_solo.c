@@ -17,10 +17,10 @@
 #else
 // for demo only
 #ifndef SUPPORT_DEV_AP
-#define PRODUCT_KEY      "a1X2bEnP82z"
-#define PRODUCT_SECRET   "7jluWm1zql7bt8qK"
-#define DEVICE_NAME      "example1"
-#define DEVICE_SECRET    "ga7XA6KdlEeiPXQPpRbAjOZXwG8ydgSe"
+#define PRODUCT_KEY      "a11k9JdyGbG"
+#define PRODUCT_SECRET   "xv2xKiFjo5lM51hR"
+#define DEVICE_NAME      "device1"
+#define DEVICE_SECRET    "GuEJF0nOw3mIYNavusHYaJfNeIX8eGDa"
 #else
 #define PRODUCT_KEY      "a1PcArcq23G"
 #define PRODUCT_SECRET   "0sfrKE4XYeO4yLLa"

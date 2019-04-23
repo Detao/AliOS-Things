@@ -16,7 +16,7 @@
 
 #include "aos/kernel.h"
 
-#include "hal/soc/uart.h"
+//#include "hal/uart.h"
 
 #include "driver/uart.h"
 
@@ -35,12 +35,12 @@ int application_start(int argc, char *argv[])
     uart.config = uartConfig;
     hal_uart_init(&uart);
 
-    uint8_t receive_bytes[15];
+    uint8_t receive_bytes[236];
     int32_t ret = -1;
     uint32_t i, recv_size = 0;
     while (1)
     {
-        ret = hal_uart_recv_II(&uart, &receive_bytes, 15, &recv_size, HAL_WAIT_FOREVER);
+        ret = hal_uart_recv_II(&uart, &receive_bytes, 236, &recv_size, HAL_WAIT_FOREVER);
         if ((ret == 0))
         {
             for (i = 0; i < recv_size; i++)

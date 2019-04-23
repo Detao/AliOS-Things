@@ -56,11 +56,13 @@ static void handle_ota_cmd(char *buf, int blen, int argc, char **argv)
         usage();
         return;
     }
+    printf("Hello OTA start \n");
     memset(&ctx, 0, sizeof(ota_service_t));
     strncpy(ctx.pk, argv[1], sizeof(ctx.pk)-1);
     strncpy(ctx.dn, argv[2], sizeof(ctx.dn)-1);
     strncpy(ctx.ds, argv[3], sizeof(ctx.ds)-1);
     strncpy(ctx.ps, argv[4], sizeof(ctx.ps)-1);
+    printf("falg \n");
     HAL_SetProductKey(ctx.pk);
     HAL_SetDeviceName(ctx.dn);
     HAL_SetDeviceSecret(ctx.ds);
@@ -113,6 +115,7 @@ int application_start(int argc, char *argv[])
     aos_cli_register_command(&otacmd);
     aos_cli_register_command(&diffcmd);
 #endif
+    printf("this is app_version 1.0.0\r\n");
     aos_loop_run();
     return 0;
 }
